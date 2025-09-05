@@ -6,7 +6,7 @@
 /*   By: bszikora <bszikora@student.42helbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 13:59:34 by bszikora          #+#    #+#             */
-/*   Updated: 2025/08/31 15:37:04 by bszikora         ###   ########.fr       */
+/*   Updated: 2025/09/03 18:42:14 by bszikora         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 
 # include <iostream>
 #include "Form.hpp"
+
+class Form;
 
 class Bureaucrat
 {

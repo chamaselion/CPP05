@@ -1,7 +1,7 @@
 NAME		= buro
 CC		=	c++
 CFLAGS		=	-Wall -Wextra -Werror -std=c++98
-INCL_DIR	=	includes
+INCL_DIR	=	include
 SRC_DIR		=	sources
 OBJ_DIR		=	objects
 
