@@ -6,10 +6,11 @@
 /*   By: bszikora <bszikora@student.42helbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/04 20:54:31 by bszikora          #+#    #+#             */
-/*   Updated: 2025/09/06 16:31:09 by bszikora         ###   ########.fr       */
+/*   Updated: 2025/09/06 16:55:23 by bszikora         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+///////////ex02///////////
 #include "RobotomyRequestForm.hpp"
 
 RobotomyRequestForm::RobotomyRequestForm()  : AForm("RobotomyRequestForm", false, 72, 45 ), name("NameMe"){ }
@@ -35,6 +36,8 @@ void	printSep(const std::string &title)
 	std::cout << "\n===== " << title << " =====\n";
 }
 
+const char* RobotomyRequestForm::RobotomyFailedException::what() const throw() { return ("Robotomy failed."); }
+
 void	drillingNoise(int count)
 {
 	for (int i = 0; i < count; i++)
@@ -50,5 +53,5 @@ void	RobotomyRequestForm::action() const
 	if (rand() % 2)
 		std::cout << "Robotomized successfully\n";
 	else
-		std::cout << "Robotomy failed\n";
+		throw RobotomyRequestForm::RobotomyFailedException();
 }

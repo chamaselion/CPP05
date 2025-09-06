@@ -6,11 +6,11 @@
 /*   By: bszikora <bszikora@student.42helbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 15:24:11 by bszikora          #+#    #+#             */
-/*   Updated: 2025/09/06 16:08:09 by bszikora         ###   ########.fr       */
+/*   Updated: 2025/09/06 16:54:30 by bszikora         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-///////////ex01///////////
+///////////ex02///////////
 #include "AForm.hpp"
 
 AForm::AForm() : name("NameMe"), signd(false), req_sign(1), req_exec(1) { }

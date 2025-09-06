@@ -6,7 +6,7 @@
 /*   By: bszikora <bszikora@student.42helbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/03 19:13:56 by bszikora          #+#    #+#             */
-/*   Updated: 2025/09/06 16:26:40 by bszikora         ###   ########.fr       */
+/*   Updated: 2025/09/06 16:47:45 by bszikora         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,28 @@
 int main()
 {
 	RobotomyRequestForm testR = RobotomyRequestForm("testerR");
-	// PresidentialPardonForm testP = PresidentialPardonForm("testerP");
-	// ShrubberyCreationForm testS = ShrubberyCreationForm("testerS");
+	PresidentialPardonForm testP = PresidentialPardonForm("testerP");
+	ShrubberyCreationForm testS = ShrubberyCreationForm("testerS");
 	Bureaucrat low = Bureaucrat("low", 149);
 	Bureaucrat high = Bureaucrat("high", 1);
 
+	
 	high.signForm(testR);
+	high.signForm(testP);
+	high.signForm(testS);
+	
+	// Robotomy tests
+	// low.executeForm(testR);
+	// high.executeForm(testR);
 
-	low.executeForm(testR);
-	high.executeForm(testR);
+	// Shrubbery tests;
+	// low.executeForm(testP);
+	// high.executeForm(testP);
+
+	// Robotomy tests
+	low.executeForm(testS);
+	high.executeForm(testS);
+
+
 	return 0;
 }

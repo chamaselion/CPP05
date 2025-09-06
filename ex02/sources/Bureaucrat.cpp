@@ -6,11 +6,11 @@
 /*   By: bszikora <bszikora@student.42helbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 14:00:32 by bszikora          #+#    #+#             */
-/*   Updated: 2025/09/05 22:38:51 by bszikora         ###   ########.fr       */
+/*   Updated: 2025/09/06 16:54:35 by bszikora         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-///////////ex01///////////
+///////////ex02///////////
 #include "../include/Bureaucrat.hpp"
 
 Bureaucrat::Bureaucrat() : name("NameMe"), grade(150) { }

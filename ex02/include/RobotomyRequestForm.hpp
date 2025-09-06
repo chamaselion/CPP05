@@ -6,7 +6,7 @@
 /*   By: bszikora <bszikora@student.42helbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/03 19:16:47 by bszikora          #+#    #+#             */
-/*   Updated: 2025/09/06 16:12:14 by bszikora         ###   ########.fr       */
+/*   Updated: 2025/09/06 16:37:47 by bszikora         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,13 @@ public:
 	RobotomyRequestForm(const RobotomyRequestForm& other);
 	RobotomyRequestForm& operator=(const RobotomyRequestForm& other);
 	~RobotomyRequestForm();
+
+	class RobotomyFailedException : public std::exception
+	{
+		public:
+		
+		virtual const char* what() const throw();
+	};
 };
 
 void	printSep(const std::string &title);
