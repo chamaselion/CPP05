@@ -6,7 +6,7 @@
 /*   By: bszikora <bszikora@student.42helbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/04 20:54:31 by bszikora          #+#    #+#             */
-/*   Updated: 2025/09/06 16:11:18 by bszikora         ###   ########.fr       */
+/*   Updated: 2025/09/06 16:31:09 by bszikora         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ void	drillingNoise(int count)
 void	RobotomyRequestForm::action() const
 {
 	drillingNoise(3);
+	srand(static_cast<unsigned>(time(0))); 
 	if (rand() % 2)
 		std::cout << "Robotomized successfully\n";
 	else
