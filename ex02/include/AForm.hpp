@@ -6,7 +6,7 @@
 /*   By: bszikora <bszikora@student.42helbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 15:23:58 by bszikora          #+#    #+#             */
-/*   Updated: 2025/09/04 21:16:06 by bszikora         ###   ########.fr       */
+/*   Updated: 2025/09/05 22:32:55 by bszikora         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,12 @@ public:
 		virtual const char* what() const throw();
 	};
 	class GradeTooLowException : public std::exception
+	{
+		public:
+		
+		virtual const char* what() const throw();
+	};
+	class AFormNotSignedException : public std::exception
 	{
 		public:
 		

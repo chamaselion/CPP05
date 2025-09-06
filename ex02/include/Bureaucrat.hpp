@@ -6,7 +6,7 @@
 /*   By: bszikora <bszikora@student.42helbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 13:59:34 by bszikora          #+#    #+#             */
-/*   Updated: 2025/09/04 21:13:01 by bszikora         ###   ########.fr       */
+/*   Updated: 2025/09/05 22:38:47 by bszikora         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ public:
 	int					getGrade() const;
 	void				incrementGrade();
 	void				decrementGrade();
+	void				executeForm(AForm const & form) const;
 
 	class GradeTooHighException : public std::exception
 	{
